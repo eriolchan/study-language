@@ -1,0 +1,21 @@
+Line one
+Line two
+Line three
+Line four
+
+----tips-1----
+----steps----
+{start} @L: line 1
+x
+.
+..
+
+{start} @L: line 1
+dd
+.
+
+{start} @L: line 2
+>G
+j
+.
+j.
