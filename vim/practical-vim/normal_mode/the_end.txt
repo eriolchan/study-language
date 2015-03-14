@@ -1,0 +1,16 @@
+The end is high
+
+----tips-9----
+----Steps----
+{start} -> @h: line 1, last occurance
+db
+x
+
+----Steps----
+{start} -> @h: line 1, last occurance
+b
+dw
+
+----Steps----
+{start} -> @h: line 1, last occurance
+daw

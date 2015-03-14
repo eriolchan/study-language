@@ -1,0 +1,9 @@
+.blog, .news { background-image: url(/sprite.png); }
+.blog { background-position: 0px 0px }
+
+----tips-10----
+----steps----
+{start} -> @.: line 2
+yyp
+cW.news<Esc>
+180<C-x>
