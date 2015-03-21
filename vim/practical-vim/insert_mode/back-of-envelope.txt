@@ -1,0 +1,7 @@
+6 chairs, each costing $35, totals $
+
+----tips-16----
+----steps----
+{start} -> @$: line 1, last occurance
+A
+<C-r>=6*35<CR>

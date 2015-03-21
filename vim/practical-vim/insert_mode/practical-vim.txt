@@ -1,0 +1,10 @@
+Practical Vim, by Drew Nell
+Read Drew Neil's
+
+----tips-15----
+----steps----
+{start} -> @P: line 1
+yt,
+jA 
+<C-r>0
+.<Esc>

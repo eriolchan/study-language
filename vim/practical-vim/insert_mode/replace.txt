@@ -1,0 +1,8 @@
+Typing in Insert mode extends the line. But in Replace mode
+the line length doesn't change.
+
+----tips-19----
+----steps----
+{start} -> @T: line 1
+f.
+R, b<Esc>
