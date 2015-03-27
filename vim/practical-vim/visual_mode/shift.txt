@@ -1,0 +1,8 @@
+Select from here to here.
+
+----tips-21----
+----steps----
+{start} -> @h: line 1, last occurrence
+vbb
+o
+e

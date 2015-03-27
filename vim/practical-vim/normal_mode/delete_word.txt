@@ -2,5 +2,5 @@ I have a couple of questions.
 
 ----tips-11----
 ----steps----
-{start} -> @a: line 1, second occurance
+{start} -> @a: line 1, second occurrence
 c3wsome more<Esc>

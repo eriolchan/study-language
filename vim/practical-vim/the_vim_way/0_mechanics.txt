@@ -5,16 +5,16 @@ Line four
 
 ----tips-1----
 ----steps----
-{start} @L: line 1
+{start} -> @L: line 1
 x
 .
 ..
 
-{start} @L: line 1
+{start} -> @L: line 1
 dd
 .
 
-{start} @L: line 2
+{start} -> @L: line 2
 >G
 j
 .

@@ -2,6 +2,6 @@
 
 ----tips-16----
 ----steps----
-{start} -> @$: line 1, last occurance
+{start} -> @$: line 1, last occurrence
 A
 <C-r>=6*35<CR>

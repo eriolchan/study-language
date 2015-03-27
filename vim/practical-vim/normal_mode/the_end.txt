@@ -2,15 +2,15 @@ The end is high
 
 ----tips-9----
 ----Steps----
-{start} -> @h: line 1, last occurance
+{start} -> @h: line 1, last occurrence
 db
 x
 
 ----Steps----
-{start} -> @h: line 1, last occurance
+{start} -> @h: line 1, last occurrence
 b
 dw
 
 ----Steps----
-{start} -> @h: line 1, last occurance
+{start} -> @h: line 1, last occurrence
 daw
