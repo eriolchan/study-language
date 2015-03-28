@@ -1,0 +1,11 @@
+li.one   a{ background-image: url('/images/sprite.png'); }
+li.two   a{ background-image: url('/images/sprite.png'); }
+li.three a{ background-image: url('/images/sprite.png'); }
+
+----tips-25----
+----steps----
+{start} -> @i: line 1, last occurrence
+<C-v>jje
+c
+components
+<Esc>

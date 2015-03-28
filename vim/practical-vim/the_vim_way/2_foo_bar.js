@@ -9,3 +9,10 @@ A;<Esc>
 j
 .
 j.
+
+----tips-26----
+---steps----
+{start} -> @1: line 1
+<C-v>jj$
+A;
+<Esc>
