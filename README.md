@@ -1,1 +1,1 @@
-Here are the sample code and exercise of study different programming language.
+Here are the sample code and exercise of studying different programming language.
