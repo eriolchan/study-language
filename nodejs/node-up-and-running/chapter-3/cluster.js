@@ -41,10 +41,10 @@ if (cluster.isMaster) {
 }
 
 function createWorker() {
-    var worker = cluster.fork().process
-    console.log('Created worker: ' + worker.pid)
+    var worker = cluster.fork()
+    console.log('Created worker: ' + worker.process.pid)
 
-    workers[worker.pid] = {worker: worker, lastCb: new Date().getTime()-1000}
+    workers[worker.process.pid] = {worker: worker, lastCb: new Date().getTime()-1000}
     worker.on('message', function(m) {
         if (m.cmd === 'reportMem') {
             workers[m.process].lastCb = new Date().getTime()
