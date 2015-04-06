@@ -1,0 +1,9 @@
+write
+!ruby %
+
+----tips-34----
+----steps----
+{start} -> @w: line 1
+A |<Esc>
+J
+:s/write/update

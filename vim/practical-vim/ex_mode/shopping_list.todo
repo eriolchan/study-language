@@ -1,0 +1,15 @@
+Shopping list
+    Hardware Store
+        Buy new hammer
+    Beauty Parlor
+        Buy nail polish remover
+        Buy nails
+
+----tips-29----
+----steps----
+{start} -> @H: line 2
+:6copy.
+
+{start} -> @H: line 2
+Vjj
+:'<,'>m$
