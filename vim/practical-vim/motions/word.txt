@@ -1,0 +1,4 @@
+Go fast.
+
+{start} -> @f: line 1
+eaer<Esc>

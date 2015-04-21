@@ -1,0 +1,16 @@
+Find the first occurrence of {char} and move to it.
+
+{start} -> @F: line 1
+fx
+fo
+
+{start} -> @F: line 1
+fc
+;
+;
+;
+
+{start} -> @F: line 1
+fo
+;;
+,

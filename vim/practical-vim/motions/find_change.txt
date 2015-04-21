@@ -1,0 +1,11 @@
+This phrase takes time but
+eventually gets to the point.
+
+{start} -> t: line 1
+v
+/ge<CR>
+h
+d
+
+{start} -> t: line 1
+d/ge<CR>

@@ -1,0 +1,15 @@
+e.g. we're going too slow
+
+{start} -> @e: line 1
+wwww
+www
+
+{start} -> @e: line 1
+W
+W
+
+{start} -> @w: line 1
+cwyou<Esc>
+
+{start} -> @w: line 1
+cWit's<Esc>

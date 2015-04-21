@@ -1,0 +1,10 @@
+I've been expecting you, Mister Bond.
+Improve your writing by deleting excellent adjectives.
+
+{start} -> @I: line 1
+f,
+dt.
+
+{start} -> @I: line 2
+fx
+daw
