@@ -1,5 +1,6 @@
 package spittr.web;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +29,7 @@ public class SpittleController {
     
     @RequestMapping(method=RequestMethod.GET)
     public List<Spittle> spittles(
-        @RequestParam(value="max",
-                      defaultValue=MAX_LONG_AS_STRING) long max,
+        @RequestParam(value="max", defaultValue=MAX_LONG_AS_STRING) long max,
         @RequestParam(value="count", defaultValue="20") int count) {
         return spittleRepository.findSpittles(max, count);
     }
@@ -39,5 +39,12 @@ public class SpittleController {
         model.addAttribute(spittleRepository.findOne(spittleId));
         
         return "spittle";
+    }
+    
+    @RequestMapping(method=RequestMethod.POST)
+    public String saveSpittle(SpittleForm form, Model model) throws Exception {
+        spittleRepository.save(new Spittle(null, form.getMessage(), new Date(), form.getLongitude(), form.getLatitude()));
+        
+        return "redirect:/spittles";
     }
 }

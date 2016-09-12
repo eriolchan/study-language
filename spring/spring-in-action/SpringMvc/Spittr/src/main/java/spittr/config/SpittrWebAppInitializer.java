@@ -2,8 +2,7 @@ package spittr.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class SpittrWebAppInitializer
-       extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override
     protected Class<?>[] getRootConfigClasses() {

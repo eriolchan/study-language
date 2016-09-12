@@ -86,6 +86,14 @@ public class Spitter {
         this.lastName= lastName;
     }
     
+    public String getEmail() {
+        return email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
     @Override
     public boolean equals(Object that) {
         return EqualsBuilder.reflectionEquals(this, that, "firstName", "lastName", "username", "password", "email");

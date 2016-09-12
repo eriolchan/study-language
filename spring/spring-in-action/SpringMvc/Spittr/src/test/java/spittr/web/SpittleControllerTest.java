@@ -32,10 +32,9 @@ public class SpittleControllerTest {
             .build();
         
         mockMvc.perform(get("/spittles"))
-            .andExpect(view().name("spittles"))
-            .andExpect(model().attributeExists("spittleList"))
-            .andExpect(model().attribute("spittleList",
-                hasItems(expectedSpittles.toArray())));
+               .andExpect(view().name("spittles"))
+               .andExpect(model().attributeExists("spittleList"))
+               .andExpect(model().attribute("spittleList", hasItems(expectedSpittles.toArray())));
     }
     
     @Test
@@ -51,10 +50,9 @@ public class SpittleControllerTest {
             .build();
         
         mockMvc.perform(get("/spittles?max=238900&count=50"))
-            .andExpect(view().name("spittles"))
-            .andExpect(model().attributeExists("spittleList"))
-            .andExpect(model().attribute("spittleList",
-                hasItems(expectedSpittles.toArray())));
+               .andExpect(view().name("spittles"))
+               .andExpect(model().attributeExists("spittleList"))
+               .andExpect(model().attribute("spittleList", hasItems(expectedSpittles.toArray())));
     }
     
     @Test
@@ -67,9 +65,24 @@ public class SpittleControllerTest {
         MockMvc mockMvc = standaloneSetup(controller).build();
         
         mockMvc.perform(get("/spittles/12345"))
-            .andExpect(view().name("spittle"))
-            .andExpect(model().attributeExists("spittle"))
-            .andExpect(model().attribute("spittle", expectedSpittle));
+               .andExpect(view().name("spittle"))
+               .andExpect(model().attributeExists("spittle"))
+               .andExpect(model().attribute("spittle", expectedSpittle));
+    }
+    
+    @Test
+    public void saveSpittle() throws Exception {
+        SpittleRepository mockRepository = mock(SpittleRepository.class);
+        SpittleController controller = new SpittleController(mockRepository);
+        MockMvc mockMvc = standaloneSetup(controller).build();
+        
+        mockMvc.perform(post("/spittles")
+               .param("message", "Hello World")
+               .param("latitude", "28.4159649")
+               .param("longitude", "-81.5811668"))
+               .andExpect(redirectedUrl("/spittles"));
+        
+        verify(mockRepository, atLeastOnce()).save(new Spittle(null, "Hello World", new Date(), -81.5811668, 28.4159649));
     }
     
     private List<Spittle> createSpittleList(int count) {
