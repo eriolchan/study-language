@@ -31,3 +31,16 @@ body {
 .spittleForm h1 {
 	font-size: 16pt;
 }
+
+label.error {
+	color: red;
+}
+
+input.error {
+	background-color: #ffcccc;
+}
+
+div.errors {
+	background-color: #ffcccc;
+	border: 2px solid red;
+}
