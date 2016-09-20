@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+  
+  <bean id="pricingEngine" class="com.erichen.pizza.service.PricingEngineImpl" />
+  
+  <bean id="customerService" class="com.erichen.pizza.service.CustomerServiceImpl" />
+  
+  <bean id="paymentProcessor" class="com.erichen.pizza.service.PaymentProcessor" /> 
+  
+  <bean id="orderService" class="com.erichen.pizza.service.OrderServiceImpl" />
+  
+</beans>
