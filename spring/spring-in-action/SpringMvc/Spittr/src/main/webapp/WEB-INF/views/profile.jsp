@@ -4,6 +4,7 @@
   <head>
     <title>Spitter</title>
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style.css" />" >
+    <href="/logout">Logout</href>
   </head>
   <body>
     <h1>Your Profile</h1>
